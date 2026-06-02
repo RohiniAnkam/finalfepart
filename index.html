@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>recipenest</title>
+
+    <style>
+      df-messenger {
+        --df-messenger-bot-message: #f1f8f4;
+        --df-messenger-user-message: #0f7a2f;
+        --df-messenger-button-titlebar-color: #0f7a2f;
+        --df-messenger-chat-background-color: #ffffff;
+        --df-messenger-font-color: #000000;
+        --df-messenger-send-icon: #0f7a2f;
+        --df-messenger-input-box-color: #f1f8f4;
+
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      
+
+     
+      @media (max-width: 768px) {
+        df-messenger {
+          bottom: 0;
+          right: 0;
+        }
+
+        df-messenger-chat {
+          width: 100% !important;
+          height: 100% !important;
+          max-height: 100vh !important;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-CBFYkuMs.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-ClqjXWiZ.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Recipe Assistant"
+      agent-id="e5460464-7bc1-423e-b885-309515924175"
+      language-code="en"
+    ></df-messenger>
+
+  </body>
+</html>
